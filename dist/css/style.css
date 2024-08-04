@@ -1,0 +1,577 @@
+:root {
+  /* Primary: Coffee */
+  --primary-100: #FFFBF2;
+  --primary-200: #FDECD4;
+  --primary-300: #EDCFAC;
+  --primary-400: #C39B77;
+  --primary-500: #704F38;
+  --primary-600: #5E3924;
+  --primary-700: #4B2818;
+  --primary-800: #391B11;
+  --primary-900: #26100B;
+}
+
+
+* {
+  font-family: 'Calistoga', sans-serif;
+}
+
+@keyframes animation-1 {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.2);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+body{
+  background-color: #FFFBF2;
+}
+
+
+.navbar {
+  
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  background-color: #432818;
+}
+
+.navbar.scrolling-active {
+  margin: 20px;
+  border-radius: 16px;
+  background-color: #432818;
+  padding: 15px 0 15px 0;
+}
+
+.navbar i {
+  color: white;
+}
+
+.navbar i:hover {
+  color: #432818;
+  cursor: pointer;
+}
+
+
+/* Home */
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+
+
+.hero h1 {
+  --animate-delay: 0.7s;
+}
+
+.hero p {
+  --animate-delay: 1.2s;
+}
+
+
+.projects {
+  padding: 100px 0 100px 0;
+  position: relative;
+}
+
+.projects img {
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.projects p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.projects .shape {
+  position: absolute;
+}
+
+.projects .shape.shape-1 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 130px;
+  top: 20%;
+  z-index: -1;
+  border-radius: 50%;
+  background: #382208;
+  animation: animation-1 2s linear infinite;
+}
+
+.projects .shape.shape-2 {
+  width: 39px;
+  height: 39px;
+  left: 150px;
+  bottom: 40px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #4B3621;
+  animation: animation-1 2s linear infinite;
+}
+
+.projects .shape.shape-3 {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  bottom: 25%;
+  z-index: -1;
+  border-radius: 50%;
+  background: #633F33;
+  animation: animation-1 2s linear infinite;
+}
+
+.projects .shape.shape-4 {
+  width: 39px;
+  height: 39px;
+  left: 40%;
+  top: 175px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #6F4E37;
+  animation: animation-1 2s linear infinite;
+}
+
+.projects .shape.shape-5 {
+  width: 19px;
+  height: 19px;
+  left: 50%;
+  bottom: 20%;
+  border-radius: 50%;
+  z-index: -1;
+  background: #A67B5B;
+  animation: animation-1 2s linear infinite;
+}
+
+.projects .shape.shape-6 {
+  width: 14px;
+  height: 14px;
+  left: 45%;
+  bottom: 70%;
+  border-radius: 50%;
+  background: #DBC1AA;
+  z-index: -1;
+  animation: animation-1 2s linear infinite;
+}
+
+.VisiMisi {
+  position: relative;
+}
+
+.VisiMisi .shape {
+  position: absolute;
+}
+
+.VisiMisi .shape.shape-1 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 1300px;
+  top: 20%;
+  z-index: -1;
+  border-radius: 50%;
+  background: #382208;
+  animation: animation-1 2s linear infinite;
+}
+
+.VisiMisi .shape.shape-2 {
+  width: 39px;
+  height: 39px;
+  left: 1100px;
+  bottom: 40px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #4B3621;
+  animation: animation-1 2s linear infinite;
+}
+
+.VisiMisi .shape.shape-3 {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  bottom: 25%;
+  z-index: -1;
+  border-radius: 50%;
+  background: #633F33;
+  animation: animation-1 2s linear infinite;
+}
+
+.VisiMisi .shape.shape-4 {
+  width: 39px;
+  height: 39px;
+  left: 50%;
+  top: 175px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #6F4E37;
+  animation: animation-1 2s linear infinite;
+}
+
+.VisiMisi .shape.shape-5 {
+  width: 19px;
+  height: 19px;
+  left: 50%;
+  bottom: 20%;
+  border-radius: 50%;
+  z-index: -1;
+  background: #A67B5B;
+  animation: animation-1 2s linear infinite;
+}
+
+.VisiMisi .shape.shape-6 {
+  width: 14px;
+  height: 14px;
+  left: 45%;
+  bottom: 70%;
+  border-radius: 50%;
+  background: #DBC1AA;
+  z-index: -1;
+  animation: animation-1 2s linear infinite;
+}
+
+.services{
+  margin-top: 2cm;
+  position: relative;
+}
+
+.services .shape {
+  position: absolute;
+}
+
+.services .shape.shape-1 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 130px;
+  top: 20%;
+  z-index: -1;
+  border-radius: 50%;
+  background: #382208;
+  animation: animation-1 2s linear infinite;
+}
+
+.services .shape.shape-2 {
+  width: 39px;
+  height: 39px;
+  left: 150px;
+  bottom: 40px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #4B3621;
+  animation: animation-1 2s linear infinite;
+}
+
+.services .shape.shape-3 {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  bottom: 25%;
+  z-index: -1;
+  border-radius: 50%;
+  background: #633F33;
+  animation: animation-1 2s linear infinite;
+}
+
+.services .shape.shape-4 {
+  width: 39px;
+  height: 39px;
+  left: 40%;
+  top: 175px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #6F4E37;
+  animation: animation-1 2s linear infinite;
+}
+
+.services .shape.shape-5 {
+  width: 19px;
+  height: 19px;
+  left: 50%;
+  bottom: 20%;
+  border-radius: 50%;
+  z-index: -1;
+  background: #A67B5B;
+  animation: animation-1 2s linear infinite;
+}
+
+.services .shape.shape-6 {
+  width: 14px;
+  height: 14px;
+  left: 45%;
+  bottom: 70%;
+  border-radius: 50%;
+  background: #DBC1AA;
+  z-index: -1;
+  animation: animation-1 2s linear infinite;
+}
+
+.services img {
+  width: 250px;
+  height: 400px;
+}
+
+.services h5 {
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.services i {
+  color: #391B11;
+  font-size: 30px;
+}
+
+.Sejarah {
+  margin-top: 2cm;
+  background-color: #704F38;
+}
+
+.Sejarah p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.bdr{
+  margin-top: 100px;
+  background-color: #704F38;
+  border-radius: 15px;
+}
+
+.c-item {
+  height: 600px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .services img {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .services h5 {
+    font-size: 16px;
+  }
+}
+
+/* Dokumen */
+.document-section {
+  margin-top: 30px;
+}
+
+.document-table {
+  background-color: var(--primary-300); /* Menggunakan primary-300 untuk latar belakang tabel dokumen */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.table thead {
+  background-color: var(--primary-500); /* Menggunakan primary-500 untuk latar belakang header tabel */
+  color: var(--primary-100); /* Menggunakan primary-100 untuk teks header tabel */
+}
+
+.btn-download {
+  background-color: var(--primary-500); /* Menggunakan primary-500 untuk tombol download */
+  color: var(--primary-100); /* Menggunakan primary-100 untuk teks tombol download */
+}
+
+.btn-download:hover {
+  background-color: var(--primary-400); /* Menggunakan primary-400 untuk tombol download saat hover */
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  color: var(--primary-900); /* Menggunakan primary-900 untuk ikon */
+}
+
+.search-bar {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clear-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+  padding: 5px;
+  background-color: var(--primary-100); /* Menggunakan primary-100 untuk tombol clear search */
+  border-radius: 50%;
+}
+
+.document-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: var(--primary-200); /* Menggunakan primary-200 untuk latar belakang header dokumen */
+  color: var(--primary-900); /* Menggunakan primary-900 untuk teks header dokumen */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.document-header h2 {
+  margin-left: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.document-section.collapsed .collapse {
+  display: none;
+}
+
+.document-section:not(.collapsed) .collapse {
+  display: block;
+}
+
+.document-section.collapsed h2:after {
+  content: ' (Show More)';
+  font-size: 0.8rem;
+}
+
+.document-section:not(.collapsed) h2:after {
+  content: ' (Show Less)';
+  font-size: 0.8rem;
+}
+
+.search-results {
+  margin-top: 20px;
+  display: none;
+}
+
+/* Production */
+.divider {
+  text-align: center;
+  position: relative;
+  margin: 40px 0;
+}
+
+.divider:before,
+.divider:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #000;
+}
+
+.divider:before {
+  left: 0;
+}
+
+.divider:after {
+  right: 0;
+}
+
+.divider span {
+  padding: 0 10px;
+  background: var(--primary-100);
+  position: relative;
+  z-index: 1;
+}
+
+.btn-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-nav .btn {
+  margin: 0 10px;
+}
+
+.diagram-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mxgraph {
+  max-width: 100%;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.btn-success {
+  background-color: var(--primary-500);
+  color: var(--primary-100);
+}
+
+.btn-success:hover {
+  background-color: var(--primary-400);
+}
+
+.btn-warning {
+  background-color: var(--primary-300);
+  color: var(--primary-600);
+}
+
+.btn-warning:hover {
+  background-color: var(--primary-200);
+}
+
+
+.footer {
+  min-height: 60vh;
+  background-color: #432818;
+  margin-top: 150px;
+}
+
+.footer .copyright {
+  padding-top: 100px;
+}
